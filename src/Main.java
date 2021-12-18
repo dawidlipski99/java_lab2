@@ -1,86 +1,46 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        /* ćwiczenie 3 switch case */
+        /* cw.4  */
 
-        /* zad.1 napisać program który przyjmuje jedną liczbę od użytkownika z klawiatury
-          i za pomocą switch case default ma określić czy:
-          a) ta liczba jest parzysta --> podpowiedz switch(a % 2) {
-          b) program który określi czy liczba jest podzielna przez 7
-         */
-
-/*
-        int a;
-        Scanner scan = new Scanner(System.in);
-
-        System.out.print("Prosze podac liczbe");
-        a = scan.nextInt();
-        switch (a % 2)
+        /* zad.1 napisać 3 pętle for i użyc:
+        a) w pierwszej pętli break
+        b) w drugiej pętli continue
+        c) w trzeciej pętli return
+        */
+/*a)*/
+        /*
+        for (int i = 0; i <= 60; i++)
         {
-            case 1:
-                System.out.println("Liczba jest nieparzysta");
+            if (i == 85)
                 break;
-            default:
-                System.out.println("Liczba jest parzysta");
+            System.out.print(i + " ");
         }
 
-        int a;
-        int b = 7;
-        Scanner scan = new Scanner(System.in);
-        System.out.print("\nPodaj liczbe:");
-        a = scan.nextInt();
-        switch (a / b)
-        {
-            case 2:
-                System.out.println("Liczba jest podzielna przez 7");
-                break;
-            default:
-                System.out.println("liczba jest nie podzielna przez 7");
-                break;
-         }
-
- */
-
-
-
-
-        /* zad.2
-           a) napisać program podobny do programu z przykładu, który ma zliczyć iloś liter 'o', 'p', 'x', 'z', 'q' w wyrazie:
-            "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
-           b) oraz ma określić ile jest pozostałych liter, które nie należą do: 'o', 'p', 'x', 'z', 'q'
          */
-/*
-        String text = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
-        int[] tablica = {0, 0, 0, 0, 0};
 
-        for (char zmiennaChar : text.toCharArray()) {
-            switch (zmiennaChar)
-            {
-                case 'o':
-                    ++tablica[0];
-                    break;
-                case 'p':
-                    ++tablica[1];
-                    break;
-                case 'x':
-                    ++tablica[2];
-                    break;
-                case 'z':
-                    ++tablica[3];
-                    break;
-                case 'q':
-                    ++tablica[4];
-                    break;
-            }
+/*b)*/
+        /*
+        for (int i = 0; i <= 50; i++)
+        {
+            if (i % 6 == 0)
+                continue;
+            System.out.print(i + " ");
         }
-        System.out.printf("\nLiczba występowania poszczególnych liter\no: %d razy\np: %d razy\nx: %d razy\nz: %d razy\nq: %d razy", tablica[0], tablica[1], tablica[2], tablica[3], tablica[4]);
 
- */
+         */
 
+/*c)*/
+        /*
+        for (int i = 0; i <= 70; i++)
+        {
+            if (i == 33)
+                return;
+            System.out.print(i + " ");
+        }
 
+         */
 
     }
 }
