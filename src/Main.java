@@ -1,56 +1,86 @@
 import java.util.Scanner;
-public class Main {
 
+public class Main {
 
     public static void main(String[] args) {
 
-        /* ćw.2 */
+        /* ćwiczenie 3 switch case */
 
-        /* zad.1 Napisz program który będzie iterował od 100 do 0,
-         *  i wyświetlał liczby które są podzielne przez ostatnią cyfrę waszego indeksu
-         * * (jesli tą liczbą jest 0 to przez 2 ostatnie) */
+        /* zad.1 napisać program który przyjmuje jedną liczbę od użytkownika z klawiatury
+          i za pomocą switch case default ma określić czy:
+          a) ta liczba jest parzysta --> podpowiedz switch(a % 2) {
+          b) program który określi czy liczba jest podzielna przez 7
+         */
 
 /*
-       for (int i = 100; i >= 0; i--)
-       {
-           System.out.print("\nliczba: " + i);
-            if (i % 9 == 0)
+        int a;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Prosze podac liczbe");
+        a = scan.nextInt();
+        switch (a % 2)
+        {
+            case 1:
+                System.out.println("Liczba jest nieparzysta");
+                break;
+            default:
+                System.out.println("Liczba jest parzysta");
+        }
+
+        int a;
+        int b = 7;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("\nPodaj liczbe:");
+        a = scan.nextInt();
+        switch (a / b)
+        {
+            case 2:
+                System.out.println("Liczba jest podzielna przez 7");
+                break;
+            default:
+                System.out.println("liczba jest nie podzielna przez 7");
+                break;
+         }
+
+ */
+
+
+
+
+        /* zad.2
+           a) napisać program podobny do programu z przykładu, który ma zliczyć iloś liter 'o', 'p', 'x', 'z', 'q' w wyrazie:
+            "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
+           b) oraz ma określić ile jest pozostałych liter, które nie należą do: 'o', 'p', 'x', 'z', 'q'
+         */
+/*
+        String text = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
+        int[] tablica = {0, 0, 0, 0, 0};
+
+        for (char zmiennaChar : text.toCharArray()) {
+            switch (zmiennaChar)
             {
-                System.out.print(" - podzielna przez 9");
-           }
-       }
+                case 'o':
+                    ++tablica[0];
+                    break;
+                case 'p':
+                    ++tablica[1];
+                    break;
+                case 'x':
+                    ++tablica[2];
+                    break;
+                case 'z':
+                    ++tablica[3];
+                    break;
+                case 'q':
+                    ++tablica[4];
+                    break;
+            }
+        }
+        System.out.printf("\nLiczba występowania poszczególnych liter\no: %d razy\np: %d razy\nx: %d razy\nz: %d razy\nq: %d razy", tablica[0], tablica[1], tablica[2], tablica[3], tablica[4]);
 
  */
-
-        /* zad.2 Napisz program który będzie uzupełniał tablicę 5-cio elementową int[] liczbami
-         * wprowadzanymi z klawiatury (użyć klasy Scanner), a następnie będzie wyświetlał elementy tablicy
-          za pomocą pętli forEach powiększone o 11 */
-
-/*
-        Scanner in = new Scanner(System.in);
-        System.out.println("\nPodaj pięć liczb.");
-        int[] liczba = new int[5];
-
-        for(int i=0;i<5;i++){
-            liczba[i] = in.nextInt();
-        }
-
-        for(int i=0;i<5;i++)
-        {
-            System.out.println(liczba[i]);
-        }
-
-        for (int x : liczba)
-        {
-            System.out.println(x + 11);
-        }
-
- */
-
-
 
 
 
     }
-
 }
